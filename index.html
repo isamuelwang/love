@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head>
+    <title>Samuel And Yannic</title>
+    <script type="text/javascript" src="static/jquery.min.js"></script>
+    <script type="text/javascript" src="static/TimeCircles.js"></script>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/TimeCircles.css" />
+    <link rel="icon" href="man.jpg">
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-color: #fffceb;
+        }
+
+        .container {
+            width: 800px;
+            height: 340px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -400px;
+            margin-top: -170px;
+        }
+    
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Samuel和Yannic在一起已经:</h2>
+            <div id="DateCountdown" data-date="2021-08-25 00:00:00"></div>
+            <img src="man.jpg" width=100>
+            <img src="girl.jpg" width=100>
+        </div>
+    </div>
+    <script>
+        $("#DateCountdown").TimeCircles();
+        console.log('我爱你，yannic！');
+        console.log('    -- samuel 于第两百天前夜');
+    </script>
+</body>
+
+</html>
